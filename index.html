@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="icon" href="./img/Universitet logo.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/calendar.css">
+    <title>BuxDU News</title>
+</head>
+<body>
+    <div id="menu">
+        <div class="container">
+            <a class="logo" href="#">MJournal.uz</a>
+            <ul class="menu_ul">
+                <li><a href="#">Asosiy</a></li>
+                <li><a href="#">Jurnal haqida</a></li>
+                <li><a href="#">Kontaktlar</a></li>
+            </ul>
+            <div class="btn">                
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">Kirish</a>
+                <a href="#">Ro‘yhatdan o‘tish</a>
+            </div>
+            <div class="bars" onclick="menu_active()">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="begin">
+        <div class="container">
+            <div class="index">
+                <div class="content">
+                    <h1>Keyingi son</h1>
+                    <p>Yangi son 29-yanvar kuni ushbu saytga yuklanadi.</p>
+                    <div class="d-f">
+                        <h2>Muallif: </h2>
+                        <p>Eshmatov T</p>
+                    </div>
+                    <div class="d-f">
+                        <h2>Mavzu: </h2>
+                        <p>Ijtimoiy tarmoqlar va...</p>
+                    </div>
+                    <img src="./img/keyingi_son.png" alt="img">
+                </div>
+
+                <div class="content">
+                    <h1>Arxiv</h1>
+                    <p>Maqolalarni sana bo‘yicha izlang</p>
+
+                    <div class="calendar light">
+                        <div class="calendar-header">
+                            <span class="month-picker" id="month-picker">February</span>
+                            <div class="year-picker">
+                                <span class="year-change" id="prev-year">
+                                    <pre><</pre>
+                                </span>
+                                <span id="year">2021</span>
+                                <span class="year-change" id="next-year">
+                                    <pre>></pre>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="calendar-body">
+                            <div class="calendar-week-day">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-days"></div>
+                        </div>
+                        <div class="month-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img class="swiper_img" src="./img/unsplash_MxVkWPiJALs.png" alt="img">
+                            <div class="txt">
+                                <h2>VR virtual muhitda haqiqiy dunyoni qanday simule qilish</h2>
+                                <p>Virtual haqiqat (VR) - bu foydalanuvchi o'zgacha hissi...</p>
+                                <div class="d-f">
+                                    <img src="./img/user.png" alt="user">
+                                    <h2>Eshmatjonov Toshmatjon</h2>
+                                </div>
+                                <span>16-yanvar</span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img class="swiper_img" src="./img/unsplash_MxVkWPiJALs.png" alt="img">
+                            <div class="txt">
+                                <h2>VR virtual muhitda haqiqiy dunyoni qanday simule qilish</h2>
+                                <p>Virtual haqiqat (VR) - bu foydalanuvchi o'zgacha hissi...</p>
+                                <div class="d-f">
+                                    <img src="./img/user.png" alt="user">
+                                    <h2>Eshmatjonov Toshmatjon</h2>
+                                </div>
+                                <span>16-yanvar</span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img class="swiper_img" src="./img/unsplash_MxVkWPiJALs.png" alt="img">
+                            <div class="txt">
+                                <h2>VR virtual muhitda haqiqiy dunyoni qanday simule qilish</h2>
+                                <p>Virtual haqiqat (VR) - bu foydalanuvchi o'zgacha hissi...</p>
+                                <div class="d-f">
+                                    <img src="./img/user.png" alt="user">
+                                    <h2>Eshmatjonov Toshmatjon</h2>
+                                </div>
+                                <span>16-yanvar</span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img class="swiper_img" src="./img/unsplash_MxVkWPiJALs.png" alt="img">
+                            <div class="txt">
+                                <h2>VR virtual muhitda haqiqiy dunyoni qanday simule qilish</h2>
+                                <p>Virtual haqiqat (VR) - bu foydalanuvchi o'zgacha hissi...</p>
+                                <div class="d-f">
+                                    <img src="./img/user.png" alt="user">
+                                    <h2>Eshmatjonov Toshmatjon</h2>
+                                </div>
+                                <span>16-yanvar</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <h1>Jurnal haqida</h1>
+                <h3>Maqolalar jurnaliga Xush kelibsiz!</h3>
+                <p>Fan, muhandislik va texnologiya sohasida ilg'or tadqiqotlar xalqaro jurnali  ochiq kirish huquqiga ega, xalqaro, ekspertlar tomonidan ko'rib chiqiladigan, oylik jurnal bo'lib, sifatli tadqiqot ishlari bilan jamiyatga xizmat qilishga bag'ishlangan.</p>
+                <p>Jurnal fan, muhandislik va texnologiyaning turli fanlari bo'yicha innovatsion tadqiqotlarni ilgari surishdan iborat.MJurnal mualliflarni yozma sharhlar, qisqa xabarlar va ko'plab fanlar bilan bog'liq eslatmalar nuqtai nazaridan asl va nashr etilmagan ishlarni taqdim etishga taklif qiladi.</p>
+                <div class="d-fs">
+                    <div class="txt">
+                        <h1>Kontaktlar</h1>
+                        <a href="tel: +998 65 221-29-14"><i class="fa-solid fa-phone"></i> +998 65 221-29-14</a>
+                        <a href="tel: +998 365 221-27-07"><i class="fa-solid fa-phone"></i> +998 365 221-27-07</a>
+                        <a href="mailto: buxdu_rektor@buxdu.uz"><i class="fa-solid fa-envelope"></i> buxdu_rektor@buxdu.uz</a>
+                        <div class="btns">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="loc">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49075.68887420058!2d64.41174496137693!3d39.75693165000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f50060d1c5c0027%3A0xf76b636757c475a5!2sBuxoro%20Davlat%20Universiteti!5e0!3m2!1suz!2s!4v1678244157825!5m2!1suz!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h5><i class="fa-solid fa-location-dot"></i> Buxoro shahar Muhammad Iqbol ko‘chasi, 11-uy</h5>
+                        <h5><i class="fa-solid fa-clock"></i> Yakshanbadan tashqari, har kuni 07:00 dan 15:00 gacha</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Js/main.js"></script>
+    <script src="./Js/Calendar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Gwendolyn:wght@400;700&family=Neonderthaw&family=Open+Sans:ital,wght@0,300;0,700;1,300&family=Poppins:wght@400;500;600&family=Roboto+Mono:wght@200&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,700&family=Rubik&family=Rubik+Beastly&family=Ubuntu:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+:root {
+    --blue: #036ED1;
+    --white: #fff;
+    --black: #000;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --p_text: #808080;
+    --input_b: #f6f7f9;
+    --input_bor: #dfe1e4;
+    --input_text: #acacac;
+    --parol_text: #89aeff;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+
+    input {
+        outline-color: var(--blue);
+        outline: var(--blue);
+    }
+
+    a {
+        text-decoration: none;      
+    }
+
+    .bosh_sahifa {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;        
+        color: var(--blue);
+        position: absolute;
+        top: 33px;
+        left: 120px;   
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 588px;
+        height: 764px;
+        background: var(--white);
+        box-shadow: 0px 0px 52px var(--shadow);
+        border-radius: 12px;
+
+        .begin {
+            width: 384px;
+            height: 564px;
+
+            h1 {
+                text-align: center;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 100%;
+                color: var(--black);
+            }
+
+            p {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--black);
+                margin-bottom: 12px;
+                margin-top: 24px;
+                
+            }
+
+            input {
+                width: 384px;
+                height: 52px;
+                background: var(--input_b);
+                border: 1px solid var(--input_bor);
+                box-sizing: border-box;
+                border-radius: 8px;
+                padding: 0 12px;
+
+                &::placeholder {
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: var(--input_text);
+                }
+
+            }
+
+            .parol {
+                display: flex;
+
+                .parol1 {
+                    position: relative;
+
+                    p {
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: var(--black);
+                    }
+
+                    input {
+                        margin-right: 24px;
+                        width: 180px;
+                        height: 52px;
+                        background: var(--input_b);
+                        border: 1px solid var(--input_bor);
+                        box-sizing: border-box;
+                        border-radius: 8px;
+                        z-index: 1;
+
+                    }
+
+                    .eye {
+                        z-index: 2;
+                        position: absolute;
+                        right: 34px;
+                        top: 75px;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+                        opacity: .5;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .fa-eye {
+                            display: none;
+                        }
+
+                        .active_bars {
+                            display: none;
+                        }
+        
+                        .active_xmark {
+                            display: inline !important;
+                        }
+                    }
+                }
+            }
+
+            .btns {
+                display: flex;
+                align-items: center;
+
+                margin-top: 12px;
+    
+                button {
+                    cursor: pointer;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    margin: 0 10px;
+    
+                    &:first-child {
+                        width: 207px;
+                        height: 56px;
+    
+                        background: #FFFFFF;
+                        border: 2px solid #036ED1;
+                        border-radius: 28px;
+    
+                        color: #036ED1;
+    
+                        &:hover {
+                            background: #036ED1;
+                            color: #fff;
+                        }
+                    }
+    
+                    &:last-child {
+                        width: 165px;
+                        height: 56px;
+    
+                        background: #036ED1;
+                        border-radius: 28px;
+                        border: none;
+    
+                        color: #FFFFFF;
+    
+                        &:hover {
+                            border: 2px solid #036ED1;
+                            background: #fff;
+                            color: #036ED1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body .container {
+        width: 493px !important;
+        height: 631px !important;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    body .container {
+        width: 428px !important;
+        height: 631px !important;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    body .bosh_sahifa {
+        position: absolute;
+        top: 17px;
+        left: 35px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body .container .begin h1 {
+        font-size: 25px !important;
+    }
+
+    body .container .begin p {
+        font-size: 13px !important;
+        margin-top: 15px !important;
+    }
+
+    body .container .begin input {
+        width: 320px !important;
+        height: 45px !important;
+    }
+
+    body .container .begin .parol .parol1 p {
+        font-size: 13px !important;
+    }
+
+    body .container .begin .parol .parol1 input {
+        margin-right: 18px;
+        width: 145px !important;
+        height: 45px !important;
+    }
+
+    body .container .begin .parol .parol1 input::placeholder {
+        font-size: 13px;
+    }
+
+    body .container .begin .parol .parol1 img {
+        top: 62px !important;
+    }
+
+    body .container .begin .btns button:first-child {
+        width: 130px !important;
+        height: 45px !important;
+    }
+
+    body .container .begin .btns button:last-child {
+        width: 167px !important;
+        height: 45px !important;
+    }
+
+    body .container .begin .btns {
+        margin-top: 18px !important;
+        display: grid;
+        width: 339px !important;
+    }
+
+    body .container .begin {
+        width: 320px !important;
+        height: 480px !important;
+    }
+
+    body .container {
+        width: 360px !important;
+        height: 515px !important;
+    }
+
+    body .bosh_sahifa {
+        top: 33px !important;
+        left: 40px !important;
+    }
+
+    body .rejim {
+        top: 33px !important;
+        right: 40px !important;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    body .container .begin h1 {
+        font-size: 20px !important;
+    }
+
+    body .container .begin p {
+        font-size: 10px !important;
+        margin-top: 10px !important;
+    }
+
+    body .container .begin .parol .parol1 p {
+        font-size: 10px !important;
+    }
+
+    body .container .begin input {
+        width: 270px !important;
+        height: 35px !important;
+
+        &::placeholder {
+            font-size: 10px;
+        }
+    }
+
+    body .container .begin .parol .parol1 input {
+        width: 125px !important;
+        height: 35px !important;
+
+        &::placeholder {
+            font-size: 10px;
+        }
+    }
+
+    body .container .begin .parol .parol1 img {
+        top: 52px !important;
+        right: 23px;
+    }
+
+    body .container .begin .btns {
+        margin-top: 15px !important;
+        width: 275px !important;
+    }
+
+    body .container .begin .btns button:first-child {
+        width: 105px !important;
+        height: 35px !important;
+    }
+
+    body .container .begin .btns button:last-child {
+        width: 142px !important;
+        height: 35px !important;
+    }
+
+    body .container .begin {
+        width: 270px !important;
+        height: 400px !important;
+    }
+
+    body .container {
+        width: 300px !important;
+        height: 425px !important;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    body .bosh_sahifa {
+        top: 10px !important;
+        left: 20px !important;
+    }
+
+    body .rejim {
+        top: 10px !important;
+        right: 20px !important;
+    }
+}
