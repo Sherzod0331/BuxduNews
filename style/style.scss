@@ -793,4 +793,84 @@ body {
         }
     }
 
+    #sent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        margin-top: 84px;
+
+        .container {
+            table {
+                width: 100%;
+                background: #FFFFFF;
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 12px;
+
+                thead {
+                    height: 73px;
+                    background: #F3F7F8;
+                    border-radius: 8px;
+
+                    th {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: 0.02em;
+
+                        color: #000000;                        
+                    }
+                }
+
+                tr {
+                    height: 40px;
+                    td {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 150%;
+                        /* identical to box height, or 30px */
+
+
+                        color: #000000;
+
+                        text-align: center;
+
+                        &:last-child {
+                            width: 140px;
+                            height: 32px;
+                            border-radius: 25px;
+                            
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 150%;
+                            /* identical to box height, or 24px */
+                            
+                            letter-spacing: 0.02em;
+                            
+                            color: #215E49;
+                        }
+                    }
+
+                    .Confirmed {
+                        background: #D6F5EB;
+                    }
+                    .Sending {
+                        background: #FCF9DA;
+                    }
+                    .Error {
+                        background: #FCDADA;
+                    }
+
+                }
+            }
+        }
+    }
+
 }
