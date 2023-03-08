@@ -62,24 +62,23 @@
 
             <form action="">
                 <div class="form-group">
-                    <label>Maqola haqida
-                        qisqacha ma’lumot:</label>
+                    <label>Maqola haqida qisqacha ma’lumot:</label>
                     <textarea class="form-control" name="message" rows="5" placeholder="Maqola haqida yozing" required=""></textarea>
                 </div>
             </form>
 
             <form action="">
                 <div class="form-group">
-                    <label><b>DOC</b> yoki <b>PDF</b> fromatdagi <br>maqolangizni yuklang</label>
+                    <label><b>DOC </b> yoki <b> PDF</b> fromatdagi maqolangizni yuklang</label>
                     <div class="fayl">
                         <label class="label" for="">
                             <input type="file" name="" id="" accept=".doc">
-                            <ion-icon name="attach-outline"></ion-icon>
+                            <i class="fa-solid fa-paperclip"></i>
                             <p>DOC formatda</p>
                         </label>
                         <label class="label" for="">
                             <input type="file" name="" id="" accept=".pdf">
-                            <ion-icon name="attach-outline"></ion-icon>
+                            <i class="fa-solid fa-paperclip"></i>
                             <p>PDF formatda</p>
                         </label>
                     </div>
@@ -89,8 +88,29 @@
             <form action="">
                 <div class="form-group">
                     <label>Taqriz faylini yuklang:</label>
-                    <input type="file" name="" id="" accept=".pdf, .doc">
+                    <label class="label" for="">
+                        <input type="file" name="" id="" accept=".pdf, .doc">
+                        <i class="fa-solid fa-paperclip"></i>
+                        <p>Taqriz faylini yuklang</p>
+                    </label>
                 </div>
+            </form>
+
+            <form action="">
+                <div class="form-group">
+                    <label>Taqriz turini tanlang:</label>
+                    <div class="fayl_r">
+                        <label>
+                            <input type="radio" name="" id="">Ichki taqriz
+                        </label>
+                        <label>
+                            <input type="radio" name="" id="">Tashqi taqriz
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <form action="">
+                <button>Maqolani saqlash</button>
             </form>
         </div>
     </div>
