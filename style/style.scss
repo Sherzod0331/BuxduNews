@@ -314,7 +314,6 @@ body {
 
                     display: flex;
                     align-items: center;
-                    justify-content: center;
                     flex-wrap: wrap;
 
                     .swiper_img {
@@ -396,6 +395,10 @@ body {
                 @media only screen and (max-width: 1400px) {
                     .swiper-slide .txt {
                         width: 100%;
+                    }
+                    .swiper-slide {
+                        width: 100%;
+                        justify-content: center;
                     }
                 }
 

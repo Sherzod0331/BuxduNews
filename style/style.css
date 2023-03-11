@@ -239,7 +239,6 @@ body #begin .container .content .swiper-slide {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
 }
 body #begin .container .content .swiper-slide .swiper_img {
@@ -301,6 +300,10 @@ body #begin .container .content .swiper-slide .txt span {
 @media only screen and (max-width: 1400px) {
   body #begin .container .content .swiper-slide .txt {
     width: 100%;
+  }
+  body #begin .container .content .swiper-slide {
+    width: 100%;
+    justify-content: center;
   }
 }
 body #begin .container .content h1 {
