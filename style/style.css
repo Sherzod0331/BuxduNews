@@ -72,6 +72,19 @@ body #menu .container .btn {
   display: flex;
   align-items: center;
 }
+body #menu .container .btn input {
+  width: 120px;
+  height: 30px;
+  border: 1px solid #036;
+  border-radius: 12px;
+  outline: none;
+  padding: 0 12px;
+  margin: 0 5px;
+  display: none;
+}
+body #menu .container .btn .input_active {
+  display: block !important;
+}
 body #menu .container .btn i {
   font-size: 20px;
 }
@@ -248,6 +261,7 @@ body #begin .container .content .swiper-slide .swiper_img {
 body #begin .container .content .swiper-slide .txt {
   margin: 0 12px;
   width: 314px;
+  margin-left: 20px;
 }
 body #begin .container .content .swiper-slide .txt h2 {
   font-family: "Poppins";
@@ -300,6 +314,7 @@ body #begin .container .content .swiper-slide .txt span {
 @media only screen and (max-width: 1400px) {
   body #begin .container .content .swiper-slide .txt {
     width: 100%;
+    margin: 0;
   }
   body #begin .container .content .swiper-slide {
     width: 100%;

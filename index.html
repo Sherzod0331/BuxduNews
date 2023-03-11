@@ -20,8 +20,9 @@
                 <li><a href="#">Jurnal haqida</a></li>
                 <li><a href="#">Kontaktlar</a></li>
             </ul>
-            <div class="btn">                
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="btn">
+                <input type="search" name="" class="input_search">
+                <i onclick="input_search()" class="fa-solid fa-magnifying-glass"></i>
                 <a href="#">Kirish</a>
                 <a href="#">Ro‘yhatdan o‘tish</a>
             </div>
@@ -179,6 +180,12 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
             el: ".swiper-pagination",
             dynamicBullets: true,

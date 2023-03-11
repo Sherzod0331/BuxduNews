@@ -32,3 +32,7 @@ function eye(a) {
 function close_message() {
     document.querySelector(".message").classList.toggle("close_message");
 }
+
+function input_search() {
+    document.querySelector(".input_search").classList.toggle("input_active");
+}

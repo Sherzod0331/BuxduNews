@@ -96,6 +96,21 @@ body {
                 display: flex;
                 align-items: center;
 
+                input {
+                    width: 120px;
+                    height: 30px;
+                    border: 1px solid #036;
+                    border-radius: 12px;
+                    outline: none;
+                    padding: 0 12px;
+                    margin: 0 5px;
+                    display: none;
+                }
+
+                .input_active {
+                    display: block !important;
+                }
+
                 i {
                     font-size: 20px;
 
@@ -325,6 +340,8 @@ body {
                         margin:0 12px;
                         width: 314px;
 
+                        margin-left: 20px;
+
                         h2 {
                             font-family: 'Poppins';
                             font-style: normal;
@@ -391,10 +408,13 @@ body {
                     }
                 }
 
+                
+
                 // Responsive
                 @media only screen and (max-width: 1400px) {
                     .swiper-slide .txt {
                         width: 100%;
+                        margin: 0;
                     }
                     .swiper-slide {
                         width: 100%;
